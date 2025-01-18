@@ -7,4 +7,21 @@ nr_letters = int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
+import random
 
+password = []
+
+# Letters
+for num in range(0,nr_letters):
+    password.append(random.choice(letters))
+# Symbols
+for num in range(0,nr_symbols):
+    password.append(random.choice(symbols))
+# Numbers
+for num in range(0,nr_numbers):
+    password.append(random.choice(numbers))
+
+# Print
+# Comment line underneath to change between "Easy version" and "Hard Version"
+random.shuffle(password)
+print("".join(password))
