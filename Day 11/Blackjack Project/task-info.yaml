@@ -1,6 +1,6 @@
 type: theory
 files:
-  - name: main.py
+  - name: snake_game.py
     visible: true
     learner_created: false
   - name: art.py
